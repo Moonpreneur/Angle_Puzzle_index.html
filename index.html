@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Angle Puzzle</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="logo">
+        <img src="website-logo.png" alt="website-logo">
+    </div>
+<h1>Angle Puzzle</h1>
+<div id="start-image" class="start-image" style="max-width: 100%; overflow: hidden;">
+  <img src="geometric-purple-neon-3d-cuboid-background_53876-105271.jpg" alt="Start Image" style="width: 100%; height: auto;">
+</div>
+<div id="container" class="hidden">
+  <div id="score">Score: 0</div>
+  <div id="questions-container"></div>
+  <table style="margin: 2% auto; border-collapse: collapse;">
+    <tr id="values">        
+    </tr>
+  </table>
+  <div id="result" style="text-align: center; font-weight: bold; font-size: 18px;"></div>
+  <div id="timeremaining" class="container">
+    Time remaining :
+    <span id="timeremainingvalue">60</span>
+    sec
+</div>
+
+  <audio id="myAudio" src="./decidemp3-14575.mp3"></audio>
+</div>
+<div id="startreset" onclick="startReset()">
+  Start Game
+</div>
+<div id="gameOver">
+  Game Over!
+</div>
+  <audio id="myAudio" src="./system-notification-199277.mp3"></audio>
+
+  <script src="script.js"></script>
+  <script src="question.js"></script>
+
+<audio id="correctAnswerSound" src="correct-6033.mp3" type="audio/mp3"></audio>
+<audio id="IncorrectAnswerSound" src="buzzer-or-wrong-answer-20582.mp3" type="audio/mp3"></audio>
+</body>
+</html>
